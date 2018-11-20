@@ -2,3 +2,5 @@
 .gradle/
 tresor-kt.iml
 out
+.DS_Store
+build/

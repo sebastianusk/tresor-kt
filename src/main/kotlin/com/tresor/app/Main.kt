@@ -9,11 +9,16 @@ import io.ktor.server.netty.*
 
 fun main(args: Array<String>) {
     val server = embeddedServer(Netty, 3001) {
-        routing {
-            get("/") {
-                call.respondText("Hello, world!", ContentType.Text.Html)
-            }
-        }
+        main()
     }
     server.start(wait = true)
+}
+
+
+fun Application.main() {
+    routing {
+        get("/") {
+            call.respondText("Hello, world!", ContentType.Text.Html)
+        }
+    }
 }
