@@ -1,6 +1,7 @@
 .idea/
 .gradle/
-tresor-kt.iml
+*.iml
 out
 .DS_Store
 build/
+.postgres
